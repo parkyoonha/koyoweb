@@ -7,7 +7,7 @@
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px auto 100px;
-    height:130vh;
+    height:200vh;
     width: 200%;
     margin:0 auto;
     scroll-behavior: smooth; 
