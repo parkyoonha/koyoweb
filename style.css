@@ -8,7 +8,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 100px auto 100px;
     height:130vh;
-    width: 150%;
+    width: 100%;
     margin:0 auto;
     scroll-behavior: smooth; 
 }
