@@ -334,9 +334,7 @@ footer{
 
 @media(max-width:700px){
 
-  background-clip{
-      display: none;
-  }
+
    .signup{display: none;}
    .navlinks{display: none;}
    #home p{
