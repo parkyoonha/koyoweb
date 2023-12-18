@@ -1,0 +1,526 @@
+/*입점문의*/
+body{ margin: 0; padding: 0;; width:100%; height:20vw; box-sizing: border-box; background-color:   rgb(255, 255, 255)}
+section{ min-height: 100%;}
+a{ text-decoration: none; }
+*{ font-family: '';}
+
+@media (max-width:700px){
+  
+header{
+opacity: 0%;
+  display:flex;
+  align-items: center;
+margin-top: 0vw;
+  width: 100%;
+
+ background-color:  rgb(255, 255, 255);
+ padding-bottom: 5vw;
+}
+header h1{
+  color:  rgb(255, 255, 255);
+  margin-left: 7vw;
+  margin-top: 4vw;
+  line-height: 1.9vw;
+}
+
+.top{
+  display: flex;
+  
+}
+header .top h3{
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+  margin-top: -3.6vw;
+  margin-left: 40vw;
+ }
+  header .logo{
+  width: 3vw;
+  height: 3vw;
+  margin-left: 40vw;
+  margin-top: 3vw;
+  border: 0px solid; 
+
+  padding: 0.5vw;
+}
+.navlinks{
+  opacity: 0%;
+}
+.navlinks{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  display: inline-block;
+  text-align: center;
+  margin-top: 9vw;
+}
+.navlinks ul {
+  margin-left: 15rem;
+  align-items: center;   
+}
+
+.navlinks ul li{
+  list-style: none;
+  display:inline-block;
+  margin-left: 10vw;
+ margin-top: 2vw;
+}
+.navlinks ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8vw;
+  font-weight: bolder;
+  text-align: center;  
+}
+.navlinks ul li a:hover{
+  color:rgb(157, 157, 157);
+ font-weight: bold;
+ transition: .1s ease;
+}
+/*--------------------bar----------------------------*/
+
+.bars{
+  left: 0;
+}
+  header .barlinks{
+      position: fixed;
+      width: 100%;
+     height: 100%;
+     background-color: rgb(30, 53, 30);
+     padding-top: 3vw;
+     left: -101.5vw;
+     top:0;
+     transition: all .5s ease;
+  }
+  .barlinks ul li{
+     list-style: none;
+   
+      margin-top: 8vw;
+      text-align: center;
+  }
+  header .barlinks ul a{
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height:10vw;
+      font-size: 6vw;
+      color: #dedede;
+      font-weight: bold;
+      margin-left: 0vw; 
+    
+      
+  }
+   
+  .barlinks ul a:hover{
+      color: #707070;
+      
+  }
+  
+  #check{
+      display: none;
+  }
+  label #btn, label #cancel{
+      position: fixed;
+      cursor: pointer;
+  }
+  header .bars label #btn{
+      left:3vw;
+      top: 3vw;
+      font-size: 10vw;
+      color: #000000;
+  }
+ header .bars label #cancel{
+      z-index: 1111;
+      left: -8vw;
+      font-size: 10vw;
+      color: #fff;
+   
+  }
+  #check:checked ~ .barlinks{
+      left: 0;
+  }
+  #check:checked ~ label #btn{
+      left: 30vw;
+      opacity: 0;
+      pointer-events: none;
+  }
+ header #check:checked ~ label #cancel{
+      left: 7vw;
+      margin-top: -6vw;
+
+  }
+  section{
+      background: url(ksquarevid.mp4) no-repeat;
+  }
+  /*--------------------bar----------------------------*/
+
+form .tt{
+    right: 0;
+    left: 0;
+    padding-left: 1vw;
+    
+}
+
+
+
+form .tt h3{
+    margin-left: 5vw;
+    margin-top: 5vw;
+    font-size: 5vw;
+
+}
+
+
+
+
+.tt ul{
+  text-decoration: none;
+  list-style: none;
+  margin-top: -3vw;
+ 
+}
+form .tt ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 10vw;
+    font-size: 4vw;
+  }
+
+form .tt .list{
+ width: 81vw;
+    height: 13vw;
+    padding-left: 5vw;
+    font-size: 4vw;
+  }
+
+ form textarea{
+    width: 85vw;
+    height:60vw;   
+    font-size: 4vw;
+  }
+.vv{
+    margin-top: 3vw;
+    margin-left: 2.6vw;
+}
+
+  form .scroll-bg{
+    background:rgb(201, 201, 201);
+    width: 85vw;
+    height: 25vw;
+    padding: 1vw;
+    margin: 0 auto;
+    margin-top: 3vw;
+    margin-left: -1vw;
+  }
+ form .scroll-div{
+    width: 85vw;
+    background: rgb(201, 201, 201);
+    height: 25vw;
+    overflow:hidden ;
+    overflow-y: scroll;
+    margin-left: -0.5vw;
+  }
+  form .scroll-object{
+    color: #000000;
+    padding-left: 3vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+    font-size: 3vw;
+    line-height: 4.5vw;
+  
+  }
+  form .checkbox .check{
+ padding-left: 0vw;
+ margin-top: 0vw;
+
+  }
+  form .checkbox span{
+    padding-left: 0vw;
+    font-size: 4vw;
+    cursor: pointer;
+     }
+
+  form .submit {
+    padding-left: 64.3vw;
+    padding-top: 4vw;
+    }
+form .submit input{
+  margin-top: 10vw;
+padding: 0.5vw;
+font-size: 5vw;
+padding-left: 6vw;padding-right: 6vw;
+border-radius: 10vw;
+padding-top: 3.5vw;padding-bottom: 3.5vw;
+border:none;
+width: 87vw;
+margin-left: -52vw;
+cursor: pointer;
+}
+
+  footer .box{
+    background-color: #4c4c4c;
+    font-size: 3vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+padding-left: 10vw;padding-right: 10vw;
+
+  
+}
+}
+@media( max-width:5000px){
+
+header{
+  display:flex;
+  align-items: center;
+margin-top: -0.5vw;
+  width: 100%;
+
+ background-color:  rgb(255, 255, 255);
+ padding-bottom: 5vw;
+}
+header h1{
+  color:  rgb(255, 255, 255);
+  margin-left: 7vw;
+  margin-top: 4vw;
+  line-height: 1.9vw;
+}
+
+.top{
+  display: flex;
+  
+}
+.top h3{
+  font-size: 2vw;
+  color: rgb(0, 0, 0);
+  margin-top: -3.6vw;
+  margin-left: 17vw;
+ }
+ .logo{
+  width: 3vw;
+  height: 3vw;
+  margin-left: 10vw;
+  margin-top: 5vw;
+  border: 0px solid; 
+
+  padding: 0.5vw;
+}
+
+.navlinks{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  display: inline-block;
+  text-align: center;
+  margin-top: 3vw;
+
+}
+.navlinks ul {
+  margin-left: 15rem;
+  align-items: center;   
+}
+
+.navlinks ul li{
+  list-style: none;
+  display:inline-block;
+  margin-left: 10vw;
+ margin-top: 2vw;
+}
+.navlinks ul li a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8vw;
+  font-weight: bolder;
+  text-align: center;  
+}
+.navlinks ul li a:hover{
+  color:rgb(157, 157, 157);
+ font-weight: bold;
+ transition: .1s ease;
+}
+      /*--------------------bar----------------------------*/
+
+  .bars{
+    left: 0;
+  }
+    .barlinks{
+        position: fixed;
+        width: 7vw;
+       height: 100%;
+       background-color: rgb(30, 53, 30);
+       padding-top: 3vw;
+       left: -10vw;
+       top:0;
+       transition: all .5s ease;
+    }
+    .barlinks ul li{
+       list-style: none;
+        margin-left: -1.5vw;
+    }
+    .barlinks ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height:3vw;
+        font-size: 0.8vw;
+        color: #dedede;
+        font-weight: bold; 
+        
+    }
+     
+    .barlinks ul a:hover{
+        color: #707070;
+        
+    }
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: fixed;
+        cursor: pointer;
+    }
+    label #btn{
+        left:3vw;
+        top: 3vw;
+        font-size: 2vw;
+        color: #000000;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -8vw;
+        font-size: 2vw;
+        color: #fff;
+     
+    }
+    #check:checked ~ .barlinks{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        left: 30vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        left: 4vw;
+        margin-top: -2vw;
+
+    }
+    section{
+        background: url(ksquarevid.mp4) no-repeat;
+    }
+    /*--------------------bar----------------------------*/
+
+.tt{
+    right: 0;
+    left: 0;
+    padding-left: 20vw;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.tt h3{
+    margin-left: 2.5vw;
+    margin-top: 5vw;
+
+}
+
+
+
+
+.tt ul{
+  text-decoration: none;
+  list-style: none;
+  margin-top: -3vw;
+ 
+}
+.tt ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 3vw;
+  }
+
+  .tt .list{
+ width: 50vw;
+    height: 2.5vw;
+    padding-left: 1vw;
+    
+  }
+
+  textarea{
+    width: 51vw;
+    height:10vw;   
+  }
+
+
+  .scroll-bg{
+    background:rgb(201, 201, 201);
+    width: 49.5vw;
+    
+    padding: 1vw;
+    margin: 0 auto;
+    margin-top: 3vw;
+    margin-left: 0vw;
+  }
+  .scroll-div{
+    width: 49vw;
+    background: rgb(201, 201, 201);
+    height: 6vw;
+    overflow:hidden ;
+    overflow-y: scroll;
+    margin-left: -0.5vw;
+  }
+   .scroll-object{
+    color: #000000;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 0.8vw;
+    line-height: 1.3vw;
+  
+  }
+  .checkbox{
+
+ margin-top: 1vw;
+  }
+ .checkbox span{
+    font-size: 1vw;
+  }
+
+  .submit {
+    padding-left: 64.3vw;
+    padding-top: 4vw;
+    margin-left: -6vw;
+    }
+.submit input{
+padding: 1vw;
+font-size: 1.1vw;
+padding-left: 5vw;padding-right: 5vw;
+border-radius: 3vw;
+border:none;
+cursor: pointer;
+}
+
+
+.box{
+    background-color: #000000;
+    font-size: 0.8vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+}
+.box p{
+    margin-left: 26px;
+    padding-top: 2vw;
+}
+.box h1{
+    padding-bottom: 1vw;
+    margin-top: -0.5vw;
+}
+}

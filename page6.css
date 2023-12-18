@@ -1,0 +1,353 @@
+body{ margin: 0; padding: 0;; width:100%; height:80vw; box-sizing: border-box; background-color:  rgb(255, 255, 255)}
+section{ min-height: 100%;}
+a{ text-decoration: none; }
+*{ font-family: '';}
+
+@media(max-width:700px){
+    header{
+        display:flex;
+        align-items: center;
+    margin-top: 0vw;
+        width: 100%;
+       height: 0vw;
+       background-color:  rgb(255, 255, 255);
+    padding-top: 2vw; padding-bottom: 2vw;
+    }
+    
+    header .top h3{
+       font-size: 5vw;
+       margin-left: 37vw;
+       color: #000000;
+    }
+    
+   header .top{
+        display: flex;
+        cursor: pointer;
+        margin-top: -50vw;
+        margin-left: -5vw;
+    
+    }
+    .navlinks ul{
+        display: none;
+    }
+       
+       .top .logo{
+        width: 7vw;
+        height: 7vw;
+     
+      
+        border: 0px solid; 
+      
+        padding: 0.5vw;
+    
+    }
+      /*--------------------bar----------------------------*/
+
+ .bars{
+    left: 0;
+  }
+    header .barlinks{
+        position: fixed;
+        width: 100%;
+       height: 100%;
+       background-color: rgb(30, 53, 30);
+       padding-top: 3vw;
+       left: -101.5vw;
+       top:0;
+       transition: all .5s ease;
+    }
+    .barlinks ul li{
+       list-style: none;
+     
+        margin-top: 8vw;
+        text-align: center;
+    }
+    header .barlinks ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height:10vw;
+        font-size: 6vw;
+        color: #dedede;
+        font-weight: bold;
+        margin-left: 0vw; 
+      
+        
+    }
+     
+    .barlinks ul a:hover{
+        color: #707070;
+        
+    }
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: fixed;
+        cursor: pointer;
+    }
+    header .bars label #btn{
+        left:3vw;
+        top: 3vw;
+        font-size: 10vw;
+        color: #000000;
+    }
+   header .bars label #cancel{
+        z-index: 1111;
+        left: -8vw;
+        font-size: 10vw;
+        color: #fff;
+     
+    }
+    #check:checked ~ .barlinks{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        left: 30vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+   header #check:checked ~ label #cancel{
+        left: 7vw;
+        margin-top: -6vw;
+
+    }
+    section{
+        background: url(ksquarevid.mp4) no-repeat;
+    }
+    /*--------------------bar----------------------------*/
+/*오시는길*/
+#map .address h5{
+    font-size: 6vw;
+    color: #000000;
+    margin-top: 20vw;
+    margin-left: 9vw;
+}
+#map .address h3{
+    font-size: 5vw;
+    color: #000000;
+
+    margin-left: 10vw;
+}
+#map .address h6{
+    font-size: 3vw;
+    color: #000000;
+    margin-left: 10vw;
+    font-weight: 500;
+    margin-top: 5vw;
+}
+
+#map .container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 30vw;
+    padding-bottom: 30vw;
+}
+
+ /*오시는길*/
+ 
+ 
+ footer .box{
+    background-color: #4c4c4c;
+    font-size: 3vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+padding-left: 10vw;padding-right: 10vw;
+
+  
+}
+
+
+}
+@media(max-width:5000px){
+    header{
+        display:flex;
+        align-items: center;
+      margin-top: -0.5vw;
+        width: 100%;
+      
+       background-color:  rgb(255, 255, 255);
+       padding-bottom: 5vw;
+      }
+      header h1{
+        color:  rgb(255, 255, 255);
+        margin-left: 7vw;
+        margin-top: 4vw;
+        line-height: 1.9vw;
+      }
+      
+      .top{
+        display: flex;
+        
+      }
+           .top h3{
+        font-size: 2vw;
+        color: rgb(0, 0, 0);
+        margin-top: -3.6vw;
+        margin-left: 17vw;
+       }
+       .logo{
+        width: 3vw;
+        height: 3vw;
+        margin-left: 10vw;
+        margin-top: 5vw;
+        border: 0px solid; 
+      
+        padding: 0.5vw;
+    }
+      
+      .navlinks{
+        width: 100%;
+        position: absolute;
+        display: flex;
+        display: inline-block;
+        text-align: center;
+        margin-top: 3vw;
+      }
+      .navlinks ul {
+        margin-left: 15rem;
+        align-items: center;   
+      }
+      
+      .navlinks ul li{
+        list-style: none;
+        display:inline-block;
+        margin-left: 10vw;
+       margin-top: 2vw;
+      }
+      .navlinks ul li a{
+        text-decoration: none;
+        color: #000000;
+        font-size: 0.8vw;
+        font-weight: bolder;
+        text-align: center;  
+      }
+      .navlinks ul li a:hover{
+        color:rgb(157, 157, 157);
+       font-weight: bold;
+       transition: .1s ease;
+      }
+   /*--------------------bar----------------------------*/
+
+   .bars{
+    left: 0;
+  }
+    .barlinks{
+        position: fixed;
+        width: 7vw;
+       height: 100%;
+       background-color: rgb(30, 53, 30);
+       padding-top: 3vw;
+       left: -10vw;
+       top:0;
+       transition: all .5s ease;
+    }
+    .barlinks ul li{
+       list-style: none;
+        margin-left: -1.5vw;
+    }
+    .barlinks ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height:3vw;
+        font-size: 0.8vw;
+        color: #dedede;
+        font-weight: bold; 
+        
+    }
+     
+    .barlinks ul a:hover{
+        color: #707070;
+        
+    }
+    
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: fixed;
+        cursor: pointer;
+    }
+    label #btn{
+        left:3vw;
+        top: 3vw;
+        font-size: 2vw;
+        color: #000000;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -8vw;
+        font-size: 2vw;
+        color: #fff;
+     
+    }
+    #check:checked ~ .barlinks{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        left: 30vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        left: 4vw;
+        margin-top: -2vw;
+
+    }
+    section{
+        background: url(ksquarevid.mp4) no-repeat;
+    }
+    /*--------------------bar----------------------------*/
+      
+/*오시는길*/
+.address h5{
+    font-size: 1vw;
+    color: #000000;
+    margin-top: 10vw;
+    margin-left: 10vw;
+}
+.address h3{
+    font-size: 1.5vw;
+    color: #000000;
+
+    margin-left: 10vw;
+}
+.address h6{
+    font-size: 0.8vw;
+    color: #000000;
+    margin-left: 10vw;
+    font-weight: 500;
+    margin-top: 5vw;
+}
+
+.container{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: 3vw;
+}
+ /*오시는길*/
+ 
+ .box{
+    background-color: #000000;
+    font-size: 0.8vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  
+}
+.box p{
+    margin-left: 26px;
+    padding-top: 2vw;
+}
+.box h1{
+    padding-bottom: 1vw;
+    margin-top: -0.5vw;
+}
+
+}
