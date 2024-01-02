@@ -129,8 +129,8 @@ header h3{
 #container .box-container{
     border:0px solid;
     background-color: black;
-    width: 50%;
-    height: 30vw;
+    width: 100%;
+    height: 140vw;
     position: relative;
     overflow: hidden;
     margin-left: 0vw;
@@ -139,8 +139,8 @@ header h3{
 }
 #container .background-clip{
     margin-top:-5vw;
-    width:200%;
-   
+    width:350%;
+    margin-left: -90vw;
 
 }
 #ksquarebrief{
