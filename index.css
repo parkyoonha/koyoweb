@@ -1,4 +1,4 @@
-body{ margin: 0; padding: 0;; width:100%; height:20vw; box-sizing: border-box; background-color:   rgb(255, 255, 255)}
+body{ margin: 0; padding: 0; width:100%; height:20vw; box-sizing: border-box; background-color:   rgb(255, 255, 255)}
 section{ min-height: 100%;}
 a{ text-decoration: none; }
 *{ font-family: '';}
@@ -10,10 +10,9 @@ a{ text-decoration: none; }
 header{
     display:flex;
     align-items: center;
-height: 10vw;
+height: 14vw;
     width: 100%;
-   background-color:  rgb(0, 0, 0);
-padding-top: 3vw;padding-bottom: 3vw;
+  background-color: #000000;
 }
 
 header h1{
@@ -32,6 +31,7 @@ header h1{
     color: rgb(18, 32, 18);
     margin-top: -4vw;
     margin-left: 4vw;
+    display: none;
    }
 
   .top .logo{
@@ -40,12 +40,12 @@ header h1{
     margin-left: 24vw;
     margin-top: -4vw;
     border: 0px solid; 
-  
+  display: none;
     padding: 0.5vw;
 }
  /*--------------------bar----------------------------*/
 
-.bars{
+ .bars{
     left: 0;
   }
     header .barlinks{
@@ -113,6 +113,7 @@ header h1{
         font-size: 12vw;
         color: #000000;
         transition: all .5s ease;
+    }
     section{
         background: url(ksquarevid.mp4) no-repeat;
     }
@@ -240,7 +241,7 @@ margin-left: 1.5vw
     background-color: black;
     width: 107%;
     height: 25vw;
-    position: relative;
+
     overflow: hidden;
     margin-left: -7vw;
     border-radius: 0vw;
@@ -968,7 +969,7 @@ padding-left: 10vw;padding-right: 10vw;
 
     /*--------------------bar----------------------------*/
 
- .bars{
+  .bars{
     left: 0;
   }
     .barlinks{
@@ -1060,6 +1061,7 @@ padding-left: 10vw;padding-right: 10vw;
         display:inline-block;
         margin-left: 10vw;
        margin-top: 2vw;
+       
     }
     .navlinks ul li a{
         text-decoration: none;
@@ -1161,7 +1163,6 @@ padding-left: 10vw;padding-right: 10vw;
         background-color: black;
         width: 93%;
         height: 25vw;
-        position: relative;
         overflow: hidden;
         margin-left: 0vw;
         border-radius: 1vw;
@@ -1197,6 +1198,7 @@ padding-left: 10vw;padding-right: 10vw;
     border-radius: 0vw;
     margin-left: 30vw;
 }
+
 .pt1{
     color: #000000;
     font-size: 1vw;
@@ -1205,14 +1207,16 @@ padding-left: 10vw;padding-right: 10vw;
     line-height: 1.8vw;
     margin-left: 15vw;
    margin-top: 1vw;
-
- 
+   border: 1px solid;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   border-bottom: 1px;
 }
+
 .pt1:hover{
     color: #989898;
-    
     cursor: pointer;
-    
 }
 
 
