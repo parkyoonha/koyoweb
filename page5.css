@@ -79,75 +79,74 @@ header .top h3{
 /*--------------------bar----------------------------*/
 
 .bars{
-  left: 0;
-}
-  header .barlinks{
-      position: fixed;
-      width: 100%;
-     height: 100%;
-     background-color: rgb(30, 53, 30);
-     padding-top: 3vw;
-     left: -101.5vw;
-     top:0;
-     transition: all .5s ease;
+    left: 0;
   }
-  .barlinks ul li{
-     list-style: none;
-   
-      margin-top: 8vw;
-      text-align: center;
-  }
-  header .barlinks ul a{
-      display: block;
-      height: 100%;
-      width: 100%;
-      line-height:10vw;
-      font-size: 6vw;
-      color: #dedede;
-      font-weight: bold;
-      margin-left: 0vw; 
+    header .barlinks{
+        position: fixed;
+        width: 100%;
+       height: 100%;
+       background-color: rgb(255, 255, 255);
+       padding-top: 36vw;
+       left: -100%;
+       top:0;
+       transition: all .5s ease;
+       z-index: 2;
+    }
+    header .barlinks ul li{
+       list-style: none;
+        margin-left: 33vw;
+        
+    }
+    header .barlinks ul a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height:15vw;
+        font-size: 6vw;
+        color: #000000;
+        font-weight: bold; 
+        
+    }
+     
+    .barlinks ul a:hover{
+        color: #606060;
+        
+    }
     
-      
-  }
-   
-  .barlinks ul a:hover{
-      color: #707070;
-      
-  }
-  
-  #check{
-      display: none;
-  }
-  label #btn, label #cancel{
-      position: fixed;
-      cursor: pointer;
-  }
-  header .bars label #btn{
-      left:3vw;
-      top: 3vw;
-      font-size: 10vw;
-      color: #000000;
-  }
- header .bars label #cancel{
-      z-index: 1111;
-      left: -8vw;
-      font-size: 10vw;
-      color: #fff;
-   
-  }
-  #check:checked ~ .barlinks{
-      left: 0;
-  }
-  #check:checked ~ label #btn{
-      left: 30vw;
-      opacity: 0;
-      pointer-events: none;
-  }
- header #check:checked ~ label #cancel{
-      left: 7vw;
-      margin-top: -6vw;
-
-  }
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        position: fixed;
+        cursor: pointer;
+    }
+    header label #btn{
+        left:5vw;
+        top: 4.5vw;
+        font-size: 10vw;
+        color: #000000;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: 90vw;
+        color: white;
+     
+    }
+    #check:checked ~ .barlinks{
+        left: 0;
+    }
+    #check:checked ~ label #btn{
+        left: 30vw;
+        opacity: 0;
+        pointer-events: none;
+    }
+   header #check:checked ~ label #cancel{
+        left: 80vw;
+        margin-top: 1vw;
+        font-size: 12vw;
+        color: #000000;
+        transition: all .5s ease;
+    }
   section{
       background: url(ksquarevid.mp4) no-repeat;
   }
@@ -314,7 +313,7 @@ header h1{
   display: inline-block;
   text-align: center;
   margin-top: 3vw;
-
+ z-index: 1;
 }
 .navlinks ul {
   margin-left: 15rem;
@@ -341,36 +340,37 @@ header h1{
 }
       /*--------------------bar----------------------------*/
 
-  .bars{
+ .bars{
     left: 0;
   }
     .barlinks{
         position: fixed;
-        width: 7vw;
+        width: 100%;
        height: 100%;
-       background-color: rgb(30, 53, 30);
-       padding-top: 3vw;
-       left: -10vw;
+       background-color: rgb(255, 255, 255);
+       padding-top: 6vw;
+       left: -100%;
        top:0;
        transition: all .5s ease;
+       z-index: 2;
     }
     .barlinks ul li{
        list-style: none;
-        margin-left: -1.5vw;
+        margin-left: 41.5vw;
     }
     .barlinks ul a{
         display: block;
         height: 100%;
         width: 100%;
-        line-height:3vw;
-        font-size: 0.8vw;
-        color: #dedede;
+        line-height:6vw;
+        font-size: 2vw;
+        color: #000000;
         font-weight: bold; 
         
     }
      
     .barlinks ul a:hover{
-        color: #707070;
+        color: #606060;
         
     }
     
@@ -384,14 +384,13 @@ header h1{
     label #btn{
         left:3vw;
         top: 3vw;
-        font-size: 2vw;
+        font-size: 2.5vw;
         color: #000000;
     }
     label #cancel{
         z-index: 1111;
-        left: -8vw;
-        font-size: 2vw;
-        color: #fff;
+        left: 90vw;
+        color: white;
      
     }
     #check:checked ~ .barlinks{
@@ -403,9 +402,11 @@ header h1{
         pointer-events: none;
     }
     #check:checked ~ label #cancel{
-        left: 4vw;
-        margin-top: -2vw;
-
+        left: 90vw;
+        margin-top: 4vw;
+        font-size: 4vw;
+        color: #000000;
+        transition: all .5s ease;
     }
     section{
         background: url(ksquarevid.mp4) no-repeat;
