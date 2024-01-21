@@ -180,7 +180,7 @@ padding-left: 10vw;padding-right: 10vw;
       
       .top{
         display: flex;
-        
+        z-index:2;
       }
            .top h3{
         font-size: 2vw;
