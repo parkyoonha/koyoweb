@@ -288,7 +288,7 @@ header h1{
 
 .top{
   display: flex;
-  
+  z-index: 2;
 }
 .top h3{
   font-size: 2vw;
